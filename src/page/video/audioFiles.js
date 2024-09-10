@@ -76,7 +76,26 @@ import NoNhau1Loi from "./videos/NoNhau1Loi.mp3";
 import EmLamKeDangThuongGoc from "./videos/EmLamKeDangThuongGoc.mp3";
 import LaoTamKhoTu from "./videos/LaoTamKhoTu.mp3";
 import DiGiuaTroiRucRo from "./videos/DiGiuaTroiRucRo.mp3";
+import NgaoNgo from "./videos/NgaoNgo.mp3";
+import VeLaiBucTranh from "./videos/VeLaiBucTranh.mp3";
+import DuConDaKhonLon from "./videos/DuConDaKhonLon.mp3";
+import LieuThuocChoTraiTim from "./videos/LieuThuocChoTraiTim.mp3";
+import DoaHongChoiVoi from "./videos/DoaHongChoiVoi.mp3";
+import EmKhongMuonMotMinh from "./videos/EmKhongMuonMotMinh.mp3";
+import VuaDiVuaKhocCTA from "./videos/VuaDiVuaKhocCTA.mp3";
 export const audios = [
+  {
+    name: "Ngáo Ngơ - HTH",
+    url: NgaoNgo,
+  },
+  {
+    name: "VẼ LẠI BỨC TRANH",
+    url: VeLaiBucTranh,
+  },
+  {
+    name: "dù con đã khôn lớn ",
+    url: DuConDaKhonLon,
+  },
   {
     name: "Lao Tâm Khổ Tứ ",
     url: LaoTamKhoTu,
@@ -220,6 +239,22 @@ export const audios = [
   {
     name: "MỘT NGÀY BUỒN",
     url: MotNgayBuon,
+  },
+  {
+    name: "Liều Thuốc Cho Trái Tim - (NH)",
+    url: LieuThuocChoTraiTim,
+  },
+  {
+    name: "ĐOÁ HỒNG CHƠI VƠI - (NH)",
+    url: DoaHongChoiVoi,
+  },
+  {
+    name: "EM KHÔNG MUỐN MỘT MÌNH- (NH)",
+    url: EmKhongMuonMotMinh,
+  },
+  {
+    name: "Vừa Đi Vừa Khóc - Cao Tùng Anh - (NH)",
+    url: VuaDiVuaKhocCTA,
   },
   {
     name: "KHÔNG YÊU ĐẾN THẾ ĐÂU - (NH)",

@@ -6,6 +6,29 @@ body {
   font-style: normal;
 }
 
+.audio-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.song-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  white-space: nowrap; /* Prevent text from wrapping */
+}
+
+.song-row span {
+  display: flex;
+  align-items: center;
+}
+
+.heart {
+  margin-left: 10px;
+}
+
 .heart {
   color: red;
   font-size: 12px;
@@ -140,7 +163,6 @@ body {
 } */
 
 .playlist h5 {
-  padding: 12px;
   color: blueviolet;
 }
 

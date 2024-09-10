@@ -12,18 +12,26 @@ const Video = () => {
   const [currentVideoIndex, setCurrentVideoIndex] = useState(0);
   const [isPlaying, setIsPlaying] = useState(true);
   const [playedSeconds, setPlayedSeconds] = useState(0);
-  // eslint-disable-next-line no-unused-vars
-  const [playCounts, setPlayCounts] = useState(Array(audios.length).fill(0));
   const [searchTerm, setSearchTerm] = useState("");
   const [volume, setVolume] = useState(0.3);
   const [replay, setReplay] = useState(false);
   const [random, setRandom] = useState(false);
   const audioRef = useRef(null);
   const playlistItemRefs = useRef([]);
+  const [isAudioPaused, setIsAudioPaused] = useState(false);
 
   const filteredAudios = audios.filter((audio) =>
     audio.name.toLowerCase().includes(searchTerm.toLowerCase())
   );
+
+  // const handleAudioSelect = (index) => {
+  //   setCurrentVideoIndex(index);
+  //   setIsPlaying(true);
+  //   setPlayedSeconds(0);
+  //   if (audioRef.current) {
+  //     audioRef.current.seekTo(0, "seconds");
+  //   }
+  // };
 
   const handleAudioSelect = (index) => {
     setCurrentVideoIndex(index);
@@ -32,6 +40,7 @@ const Video = () => {
     if (audioRef.current) {
       audioRef.current.seekTo(0, "seconds");
     }
+    setIsAudioPaused(false); // Ensure that audio is not paused when a new track is selected
   };
 
   const handleAudioEnded = () => {
@@ -93,6 +102,10 @@ const Video = () => {
           handleVolumeChange={(e) => setVolume(parseFloat(e.target.value))}
         />
 
+        <div className="playlist">
+          <h5>{audios[currentVideoIndex]?.name || "None"}</h5>
+        </div>
+
         <SeekBar
           playedSeconds={playedSeconds}
           duration={audioRef.current?.getDuration() || 0}
@@ -119,11 +132,14 @@ const Video = () => {
         />
 
         <ListMusic
+          audios={audios}
           filteredAudios={filteredAudios}
           currentVideoIndex={currentVideoIndex}
           handleAudioSelect={handleAudioSelect}
           isPlaying={isPlaying}
-          playCounts={playCounts}
+          isAudioPaused={isAudioPaused}
+          playAudio={() => setIsPlaying(true)} // Resume playback
+          pauseAudio={() => setIsPlaying(false)} // Pause playback
           playlistItemRefs={playlistItemRefs}
         />
       </div>

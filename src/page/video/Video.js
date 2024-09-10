@@ -1,4 +1,4 @@
-import React, { useState, useRef, useEffect } from "react";
+import React, { useState, useRef, useEffect, useCallback } from "react";
 import ReactPlayer from "react-player";
 import { BsFillVolumeUpFill } from "react-icons/bs";
 import { motion } from "framer-motion";
@@ -39,6 +39,24 @@ const Video = () => {
   const audioRef = useRef(null);
   const nameAudioRef = useRef(null);
   const playlistRef = useRef(null);
+
+  // Ref to store playlist item refs
+  const playlistItemRefs = useRef([]);
+
+  // Function to scroll to the currently playing song
+  const scrollToCurrentSong = useCallback(() => {
+    if (playlistItemRefs.current[currentVideoIndex]) {
+      playlistItemRefs.current[currentVideoIndex].scrollIntoView({
+        behavior: "smooth",
+        block: "center",
+      });
+    }
+  }, [currentVideoIndex]);
+
+  // Call scrollToCurrentSong whenever the currentVideoIndex changes
+  useEffect(() => {
+    scrollToCurrentSong();
+  }, [currentVideoIndex, scrollToCurrentSong]);
 
   const handleAudioEnded = () => {
     setPlayCounts((prevCounts) => {
@@ -304,17 +322,16 @@ const Video = () => {
         </div>
 
         <div
-          className={`playlist ${isBlurred ? "blurred" : ""} container-fluid`}
+          className={` ${isBlurred ? "blurred" : ""} container-fluid`}
           ref={playlistRef}
           onMouseEnter={handleMouseEnter}
           onMouseLeave={handleMouseLeave}
         >
-          <h5>Have a nice day. Enjoy the music. 😉</h5>
-          <a href="https://drive.google.com/drive/u/1/folders/1EEIo1ieVHgBy8EZdpSYizcomCJ_OwWFq">
+          {/* <a href="https://drive.google.com/drive/u/1/folders/1EEIo1ieVHgBy8EZdpSYizcomCJ_OwWFq">
             Nghe Đỡ Nha, Đang lỗi{" "}
-          </a>
+          </a> */}
           {/* Volume Control Slider */}
-          <div className="volume-control">
+          <div className="volume-control ">
             <label htmlFor="volume">Volume:</label>
             <input
               id="volume"
@@ -329,7 +346,9 @@ const Video = () => {
             <span className="volume-percentage">{volumePercentage}%</span>
           </div>
           {/* Seek Bar */}
-          <h5>{audios[currentVideoIndex]?.name || "None"}</h5>
+          <div className="playlist">
+            <h5>{audios[currentVideoIndex]?.name || "None"}</h5>
+          </div>
           <div className="track-controls">
             <button onClick={handlePrevious} title="Previous">
               <FaBackward size={24} />
@@ -373,45 +392,48 @@ const Video = () => {
             />
             <span className="seek-time">{formatTime(duration)}</span>
           </div>
-
-          {/* Track Controls */}
-
-          <ul className="row">
-            {filteredAudios.map((audio, index) => (
-              <li
-                key={index}
-                className={`col-sm-6 col-lg-3 col-12 ${
-                  audios.indexOf(audio) === currentVideoIndex ? "active" : ""
-                }`}
-                onClick={() => handleAudioSelect(audios.indexOf(audio))}
-              >
-                <div className="audio-info">
-                  {playCounts[audios.indexOf(audio)] >= 3 && (
-                    <span className="heart" title="Do you like this song?">
-                      ❤️
-                    </span>
-                  )}
-
-                  <span style={{ marginLeft: "10px" }}>{audio.name}</span>
-                </div>
-                {audios.indexOf(audio) === currentVideoIndex && isPlaying && (
-                  <motion.div
-                    className="music-wave"
-                    initial={{ opacity: 0, y: 10 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    exit={{ opacity: 0, y: -10 }}
-                    whileHover={{ scale: 1.1 }}
-                    whileTap={{ scale: 0.9 }}
-                  >
-                    <BsFillVolumeUpFill size={24} color="blueviolet" />
-                  </motion.div>
-                )}
-              </li>
-            ))}
-          </ul>
-
-          <span>Copyright by CONCENTRIX ❤</span>
         </div>
+      </div>
+      {/* Track Controls */}
+      <div className="playlist" style={{ marginTop: "16px" }}>
+        <h5>
+          List Music - <span>Have a nice day. Enjoy the music. 😉</span>
+        </h5>
+        <ul className="row">
+          {filteredAudios.map((audio, index) => (
+            <li
+              key={index}
+              className={`col-sm-6 col-lg-3 col-12 ${
+                audios.indexOf(audio) === currentVideoIndex ? "active" : ""
+              }`}
+              onClick={() => handleAudioSelect(audios.indexOf(audio))}
+              ref={(el) => (playlistItemRefs.current[index] = el)}
+            >
+              <div className="audio-info">
+                {playCounts[audios.indexOf(audio)] >= 3 && (
+                  <span className="heart" title="Do you like this song?">
+                    ❤️
+                  </span>
+                )}
+
+                <span style={{ marginLeft: "10px" }}>{audio.name}</span>
+              </div>
+              {audios.indexOf(audio) === currentVideoIndex && isPlaying && (
+                <motion.div
+                  className="music-wave"
+                  initial={{ opacity: 0, y: 10 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  exit={{ opacity: 0, y: -10 }}
+                  whileHover={{ scale: 1.1 }}
+                  whileTap={{ scale: 0.9 }}
+                >
+                  <BsFillVolumeUpFill size={24} color="blueviolet" />
+                </motion.div>
+              )}
+            </li>
+          ))}
+        </ul>
+        <span>Copyright by CONCENTRIX ❤</span>
       </div>
     </>
   );

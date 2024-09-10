@@ -327,9 +327,15 @@ const Video = () => {
           onMouseEnter={handleMouseEnter}
           onMouseLeave={handleMouseLeave}
         >
-          {/* <a href="https://drive.google.com/drive/u/1/folders/1EEIo1ieVHgBy8EZdpSYizcomCJ_OwWFq">
-            Nghe Đỡ Nha, Đang lỗi{" "}
-          </a> */}
+          <div className="playlist" style={{ marginTop: "10px" }}>
+            <a
+              href="https://drive.google.com/drive/u/1/folders/1EEIo1ieVHgBy8EZdpSYizcomCJ_OwWFq"
+              target="blank"
+            >
+              Long Playlist
+            </a>
+          </div>
+
           {/* Volume Control Slider */}
           <div className="volume-control ">
             <label htmlFor="volume">Volume:</label>

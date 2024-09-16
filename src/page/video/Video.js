@@ -94,42 +94,45 @@ const Video = () => {
             height="100%"
           />
         </div>
+        <div className="boxvideo">
+          <SearchInput searchTerm={searchTerm} setSearchTerm={setSearchTerm} />
 
-        <SearchInput searchTerm={searchTerm} setSearchTerm={setSearchTerm} />
+          <VolumeControlSlider
+            volume={volume}
+            handleVolumeChange={(e) => setVolume(parseFloat(e.target.value))}
+          />
 
-        <VolumeControlSlider
-          volume={volume}
-          handleVolumeChange={(e) => setVolume(parseFloat(e.target.value))}
-        />
+          <div className="playlist">
+            <h5>{audios[currentVideoIndex]?.name || "None"}</h5>
+          </div>
 
-        <div className="playlist">
-          <h5>{audios[currentVideoIndex]?.name || "None"}</h5>
+          <TrackControls
+            isPlaying={isPlaying}
+            handlePlayPause={() => setIsPlaying(!isPlaying)}
+            handlePrevious={() =>
+              setCurrentVideoIndex((prevIndex) =>
+                prevIndex === 0 ? audios.length - 1 : prevIndex - 1
+              )
+            }
+            handleNext={() =>
+              setCurrentVideoIndex(
+                (prevIndex) => (prevIndex + 1) % audios.length
+              )
+            }
+            replay={replay}
+            handleReplay={() => setReplay(!replay)}
+            random={random}
+            handleRandom={() => setRandom(!random)}
+          />
+
+          <SeekBar
+            playedSeconds={playedSeconds}
+            duration={audioRef.current?.getDuration() || 0}
+            handleSeek={(e) =>
+              audioRef.current.seekTo(parseFloat(e.target.value), "seconds")
+            }
+          />
         </div>
-
-        <SeekBar
-          playedSeconds={playedSeconds}
-          duration={audioRef.current?.getDuration() || 0}
-          handleSeek={(e) =>
-            audioRef.current.seekTo(parseFloat(e.target.value), "seconds")
-          }
-        />
-
-        <TrackControls
-          isPlaying={isPlaying}
-          handlePlayPause={() => setIsPlaying(!isPlaying)}
-          handlePrevious={() =>
-            setCurrentVideoIndex((prevIndex) =>
-              prevIndex === 0 ? audios.length - 1 : prevIndex - 1
-            )
-          }
-          handleNext={() =>
-            setCurrentVideoIndex((prevIndex) => (prevIndex + 1) % audios.length)
-          }
-          replay={replay}
-          handleReplay={() => setReplay(!replay)}
-          random={random}
-          handleRandom={() => setRandom(!random)}
-        />
 
         <ListMusic
           audios={audios}

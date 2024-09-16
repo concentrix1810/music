@@ -5,7 +5,15 @@ body {
   font-weight: 400;
   font-style: normal;
 }
-
+.boxvideo {
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  background: white;
+  margin-bottom: 36px;
+}
 .audio-info {
   display: flex;
   flex-direction: column;
@@ -342,7 +350,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 20px; /* Adjust this for spacing */
+  padding-top: 20px;
 }
 
 /* Style the input */

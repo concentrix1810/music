@@ -1,11 +1,12 @@
 import React from "react";
+import { FaVolumeUp } from "react-icons/fa";
 
 const VolumeControlSlider = ({ volume, handleVolumeChange }) => {
   const volumePercentage = Math.round(volume * 100);
 
   return (
     <div className="volume-control ">
-      <label htmlFor="volume">Volume:</label>
+      <FaVolumeUp size={24} style={{ color: "blueviolet" }} />
       <input
         id="volume"
         type="range"

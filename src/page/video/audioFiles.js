@@ -83,7 +83,12 @@ import LieuThuocChoTraiTim from "./videos/LieuThuocChoTraiTim.mp3";
 import DoaHongChoiVoi from "./videos/DoaHongChoiVoi.mp3";
 import EmKhongMuonMotMinh from "./videos/EmKhongMuonMotMinh.mp3";
 import VuaDiVuaKhocCTA from "./videos/VuaDiVuaKhocCTA.mp3";
+import AnhTraiAlan from "./videos/AnhTraiAlan.mp3";
 export const audios = [
+  {
+    name: "4 Bài Kết Hợp - (ATSH)",
+    url: AnhTraiAlan,
+  },
   {
     name: "Ngáo Ngơ - HTH",
     url: NgaoNgo,

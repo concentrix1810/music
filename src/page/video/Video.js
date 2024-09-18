@@ -24,15 +24,6 @@ const Video = () => {
     audio.name.toLowerCase().includes(searchTerm.toLowerCase())
   );
 
-  // const handleAudioSelect = (index) => {
-  //   setCurrentVideoIndex(index);
-  //   setIsPlaying(true);
-  //   setPlayedSeconds(0);
-  //   if (audioRef.current) {
-  //     audioRef.current.seekTo(0, "seconds");
-  //   }
-  // };
-
   const handleAudioSelect = (index) => {
     setCurrentVideoIndex(index);
     setIsPlaying(true);
@@ -76,7 +67,6 @@ const Video = () => {
     return () => {
       document.removeEventListener("keydown", handleKeyDown);
     };
-    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [volume]);
 
   return (
@@ -95,8 +85,12 @@ const Video = () => {
           />
         </div>
         <div className="boxvideo">
-          <SearchInput searchTerm={searchTerm} setSearchTerm={setSearchTerm} />
-
+          <SearchInput
+            searchTerm={searchTerm}
+            setSearchTerm={setSearchTerm}
+            filteredAudios={filteredAudios}
+            onSelectAudio={handleAudioSelect} // Pass function to handle audio selection
+          />
           <VolumeControlSlider
             volume={volume}
             handleVolumeChange={(e) => setVolume(parseFloat(e.target.value))}

@@ -84,6 +84,14 @@ import DoaHongChoiVoi from "./videos/DoaHongChoiVoi.mp3";
 import EmKhongMuonMotMinh from "./videos/EmKhongMuonMotMinh.mp3";
 import VuaDiVuaKhocCTA from "./videos/VuaDiVuaKhocCTA.mp3";
 import AnhTraiAlan from "./videos/AnhTraiAlan.mp3";
+import QuaCauRuocEm from "./videos/QuaCauRuocEm.mp3";
+import PhaoHong from "./videos/PhaoHong.mp3";
+import EmGiOi from "./videos/EmGiOi.mp3";
+import BatTinhYeuLen from "./videos/BatTinhYeuLen.mp3";
+import CatDoiNoiSau from "./videos/CatDoiNoiSau.mp3";
+import LaTuLuc from "./videos/LaTuLuc.mp3";
+import TinhDauQuaChen from "./videos/TinhDauQuaChen.mp3";
+import TroiEmLai from "./videos/TroiEmLai.mp3";
 export const audios = [
   {
     name: "4 Bài Kết Hợp - (ATSH)",
@@ -244,6 +252,38 @@ export const audios = [
   {
     name: "MỘT NGÀY BUỒN",
     url: MotNgayBuon,
+  },
+  {
+    name: "Qua cầu rước em - (NH)",
+    url: QuaCauRuocEm,
+  },
+  {
+    name: "Pháo hồng - (NH)",
+    url: PhaoHong,
+  },
+  {
+    name: "Em gì ơi (J) - (NH)",
+    url: EmGiOi,
+  },
+  {
+    name: "Bật tình yêu lên - (NH)",
+    url: BatTinhYeuLen,
+  },
+  {
+    name: "Cắt đôi nỗi sầu - (NH)",
+    url: CatDoiNoiSau,
+  },
+  {
+    name: "Là từ lúc - (NH)",
+    url: LaTuLuc,
+  },
+  {
+    name: "Tình đầu quá chén - (NH)",
+    url: TinhDauQuaChen,
+  },
+  {
+    name: "Trói em lại - (NH)",
+    url: TroiEmLai,
   },
   {
     name: "Liều Thuốc Cho Trái Tim - (NH)",

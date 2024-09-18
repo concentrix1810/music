@@ -14,6 +14,94 @@ body {
   background: white;
   margin-bottom: 36px;
 }
+.search-wrapper {
+  display: flex;
+  justify-content: center; /* Center the search container horizontally */
+  width: 100%;
+  padding: 10px; /* Add padding to the wrapper if needed */
+  position: relative; /* Ensure that the container is positioned relative */
+}
+
+.search-container {
+  position: relative; /* Ensure that search-suggestions is positioned relative to this container */
+  width: 100%;
+  max-width: 600px; /* Adjust the max-width as needed */
+}
+
+.search-input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px; /* Match the border-radius here */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add subtle shadow for depth */
+}
+
+.search-suggestions {
+  position: absolute;
+  top: 100%; /* Position directly below the search-input */
+  left: 0;
+  width: 100%; /* Match the width of search-input */
+  border: 1px solid #ccc;
+  border-radius: 10px; /* Match the border-radius to search-input */
+  background-color: #fff;
+  z-index: 10;
+  max-height: 450px; /* Set maximum height */
+  overflow-y: scroll; /* Enable vertical scrolling */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Add subtle shadow for depth */
+  opacity: 0; /* Initially hidden */
+  visibility: hidden; /* Initially hidden */
+  transform: translateY(-10px); /* Start slightly above */
+  transition: opacity 0.3s ease, visibility 0.3s ease, transform 0.3s ease; /* Smooth transition */
+}
+
+.search-suggestions.visible {
+  opacity: 1; /* Make visible when the class is applied */
+  visibility: visible; /* Ensure visibility */
+  transform: translateY(0); /* Move into place */
+}
+
+.search-suggestion {
+  padding: 10px;
+  cursor: pointer;
+  border-bottom: 1px solid #eee;
+  transition: background-color 0.2s ease; /* Smooth hover effect */
+}
+
+.search-suggestion:hover {
+  background-color: #fff8ea; /* Slightly different color on hover */
+}
+
+.search-suggestion:last-child {
+  border-bottom: none;
+}
+
+/* Hide scrollbar but allow scrolling */
+.search-suggestions::-webkit-scrollbar {
+  width: 0; /* Hide the scrollbar */
+}
+
+.search-suggestions {
+  -ms-overflow-style: none; /* Hide scrollbar for Internet Explorer and Edge */
+  scrollbar-width: none; /* Hide scrollbar for Firefox */
+}
+
+.search-results {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin-top: 8px;
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+.search-result-item {
+  padding: 8px;
+  cursor: pointer;
+}
+
+.search-result-item:hover {
+  background-color: #f0f0f0;
+}
+
 .audio-info {
   display: flex;
   flex-direction: column;

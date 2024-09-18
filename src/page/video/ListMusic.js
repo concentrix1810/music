@@ -47,7 +47,7 @@ const ListMusic = ({
       </h5>
       <ul className="row">
         {filteredAudios.map((audio, index) => {
-          const actualIndex = audios.indexOf(audio); // Map to original index
+          const actualIndex = audios.findIndex((a) => a.name === audio.name); // Ensure correct index
           const isActive = actualIndex === currentVideoIndex;
 
           return (
@@ -58,7 +58,6 @@ const ListMusic = ({
               onClick={() => handleClick(actualIndex)}
             >
               <div className="audio-info">
-                {/* Align the song name and icon on the same row */}
                 <div className="song-row">
                   <span>{audio.name}</span>
                   <span>

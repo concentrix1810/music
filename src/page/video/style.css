@@ -102,6 +102,45 @@ body {
   background-color: #f0f0f0;
 }
 
+.clear-button {
+  background: none;
+  border: none;
+  color: #999;
+  font-size: 16px;
+  cursor: pointer;
+  margin-left: 8px; /* Adjust spacing between input and button */
+}
+
+.search-suggestions {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  border: 1px solid #ddd;
+  background-color: #fff;
+  max-height: 200px;
+  overflow-y: auto;
+  border-radius: 4px;
+  z-index: 1000;
+}
+
+.search-suggestion {
+  padding: 8px;
+  cursor: pointer;
+}
+
+.search-suggestion:hover {
+  background-color: #f0f0f0;
+}
+
+.search-suggestions.visible {
+  display: block;
+}
+
+.search-suggestions:not(.visible) {
+  display: none;
+}
+
 .audio-info {
   display: flex;
   flex-direction: column;

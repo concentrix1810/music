@@ -45,40 +45,50 @@ const SearchInput = ({
   };
 
   return (
-    <div className="search-wrapper" ref={searchRef}>
-      <div className="search-container">
-        <input
-          type="text"
-          placeholder="Search for music..."
-          value={searchTerm}
-          onChange={(e) => setSearchTerm(e.target.value)}
-          onFocus={handleFocus}
-          className="search-input"
-        />
-        {searchTerm && (
-          <button className="clear-button" onClick={handleClearSearch}>
-            <FaTimes />
-          </button>
-        )}
-        <div
-          className={`search-suggestions ${showSuggestions ? "visible" : ""}`}
-        >
-          {searchTerm && filteredAudios.length > 0 ? (
-            filteredAudios.map((audio, index) => (
-              <div
-                key={index}
-                className="search-suggestion"
-                onClick={() => handleSuggestionClick(audio)}
-              >
-                {formatSuggestion(audio.name)}
-              </div>
-            ))
-          ) : (
-            <div className="search-suggestion">No results found</div>
+    <>
+      <div className="search-wrapper" ref={searchRef}>
+        <div className="search-container">
+          <input
+            type="text"
+            placeholder="Search for music..."
+            value={searchTerm}
+            onChange={(e) => setSearchTerm(e.target.value)}
+            onFocus={handleFocus}
+            className="search-input"
+          />
+          {searchTerm && (
+            <button className="clear-button" onClick={handleClearSearch}>
+              <FaTimes />
+            </button>
           )}
+          <div
+            className={`search-suggestions ${showSuggestions ? "visible" : ""}`}
+          >
+            {searchTerm && filteredAudios.length > 0 ? (
+              filteredAudios.map((audio, index) => (
+                <div
+                  key={index}
+                  className="search-suggestion"
+                  onClick={() => handleSuggestionClick(audio)}
+                >
+                  {formatSuggestion(audio.name)}
+                </div>
+              ))
+            ) : (
+              <div className="search-suggestion">No results found</div>
+            )}
+          </div>
         </div>
       </div>
-    </div>
+      <div style={{ justifyContent: "center", display: "flex" }}>
+        <a
+          href="https://drive.google.com/drive/u/1/folders/1EEIo1ieVHgBy8EZdpSYizcomCJ_OwWFq"
+          target="blank"
+        >
+          Long Playlist
+        </a>
+      </div>
+    </>
   );
 };
 

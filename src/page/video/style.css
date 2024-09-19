@@ -28,14 +28,30 @@ body {
   max-width: 600px; /* Adjust the max-width as needed */
 }
 
-.search-input {
+.search-input-container {
   width: 100%;
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 4px; /* Match the border-radius here */
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add subtle shadow for depth */
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
+.clear-button {
+  position: absolute; /* Position the button relative to the container */
+  right: 10px; /* Distance from the right edge of the container */
+  top: 50%; /* Center vertically */
+  transform: translateY(-50%); /* Center vertically */
+  border: none; /* Remove default border */
+  background: none; /* Remove default background */
+  cursor: pointer; /* Change cursor to pointer */
+  color: #333; /* Set color for the icon */
+  font-size: 16px; /* Adjust font size if needed */
+  padding: 0; /* Remove padding */
+}
+
+.clear-button:hover {
+  color: red;
+}
 .search-suggestions {
   position: absolute;
   top: 100%; /* Position directly below the search-input */
@@ -102,33 +118,6 @@ body {
   background-color: #f0f0f0;
 }
 
-.clear-button {
-  background: none;
-  border: none;
-  color: #999;
-  font-size: 16px;
-  cursor: pointer;
-  margin-left: 8px; /* Adjust spacing between input and button */
-}
-
-/* .search-suggestions {
-  position: absolute;
-  top: 100%;
-  left: 0;
-  right: 0;
-  border: 1px solid #ddd;
-  background-color: #fff;
-  max-height: 200px;
-  overflow-y: auto;
-  border-radius: 4px;
-  z-index: 1000;
-} */
-
-.search-suggestion {
-  padding: 8px;
-  cursor: pointer;
-}
-
 .search-suggestion:hover {
   background-color: #f0f0f0;
 }
@@ -139,6 +128,19 @@ body {
 
 .search-suggestions:not(.visible) {
   display: none;
+}
+
+.delete-icon {
+  float: right;
+  margin-left: auto; /* Pushes the icon to the far right */
+  cursor: pointer;
+  color: blueviolet;
+  transition: color 0.3s, text-decoration 0.3s; /* Smooth transition for hover effects */
+}
+
+.delete-icon:hover {
+  color: red; /* Change color on hover */
+  text-decoration: underline; /* Add underline on hover */
 }
 
 .audio-info {
@@ -206,7 +208,6 @@ body {
   flex: 1;
   padding-right: 20px;
   text-align: center;
-  /* margin-top: 70px; */
 }
 
 .playlist h2 {
@@ -483,7 +484,6 @@ body {
 /* Style the input */
 .search-input {
   width: 100%;
-  max-width: 500px; /* Limit the width of the input */
   padding: 10px;
   border: 2px solid #ddd;
   border-radius: 8px;
@@ -552,6 +552,9 @@ body {
 @media (max-width: 480px) {
   .responsive-player {
     padding-top: 100%; /* 1:1 Aspect Ratio for mobile devices */
+  }
+  .playlist h5 {
+    font-size: 14px;
   }
 }
 

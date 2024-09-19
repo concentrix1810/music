@@ -92,6 +92,11 @@ import CatDoiNoiSau from "./videos/CatDoiNoiSau.mp3";
 import LaTuLuc from "./videos/LaTuLuc.mp3";
 import TinhDauQuaChen from "./videos/TinhDauQuaChen.mp3";
 import TroiEmLai from "./videos/TroiEmLai.mp3";
+import SongGio from "./videos/SongGio.mp3";
+import BacphanPiano from "./videos/BacphanPiano.mp3";
+import BacPhan from "./videos/BacPhan.mp3";
+import HongNhang from "./videos/HongNhang.mp3";
+import LaMotThangConTrai from "./videos/LaMotThangConTrai.mp3";
 export const audios = [
   {
     name: "4 Bài Kết Hợp - (ATSH)",
@@ -150,6 +155,38 @@ export const audios = [
     url: ID31073,
   },
   {
+    name: "Thiên Lý Ơi (J) - Mix",
+    url: ThienLyOi,
+  },
+  {
+    name: "Em gì ơi (J) - (NH)",
+    url: EmGiOi,
+  },
+  {
+    name: "Mẹ Ơi 2 (J)",
+    url: MeOi2,
+  },
+  {
+    name: "Sóng Gió (J)",
+    url: SongGio,
+  },
+  {
+    name: "Bạc Phận Piano (J)",
+    url: BacphanPiano,
+  },
+  {
+    name: "Bạc Phận (J)",
+    url: BacPhan,
+  },
+  {
+    name: "Hồng Nhan (J)",
+    url: HongNhang,
+  },
+  {
+    name: "Là Một Thằng Con Trai (J)",
+    url: LaMotThangConTrai,
+  },
+  {
     name: "W ID Thang Máy",
     url: IDThangMay,
   },
@@ -161,10 +198,7 @@ export const audios = [
     name: "Nổi Gió Lên",
     url: NoiGioLen,
   },
-  {
-    name: "Thiên Lý Ơi (J) - Mix",
-    url: ThienLyOi,
-  },
+
   {
     name: "Thương Người Không Thương",
     url: ThuongNguoiKhongThuong,
@@ -181,10 +215,7 @@ export const audios = [
     name: "MaMaMiA",
     url: MaMaMiA,
   },
-  {
-    name: "Mẹ Ơi 2 (J)",
-    url: MeOi2,
-  },
+
   {
     name: "Những Lời Hứa Bỏ Quên",
     url: NhungLoiHuaBoQuen,
@@ -261,10 +292,7 @@ export const audios = [
     name: "Pháo hồng - (NH)",
     url: PhaoHong,
   },
-  {
-    name: "Em gì ơi (J) - (NH)",
-    url: EmGiOi,
-  },
+
   {
     name: "Bật tình yêu lên - (NH)",
     url: BatTinhYeuLen,

@@ -353,10 +353,6 @@ body {
   transform: scale(1); /* Normal size */
 }
 
-.track-controls button:hover {
-  color: #0056b3; /* Darker color on hover */
-}
-
 .track-controls button:focus {
   outline: none;
 }
@@ -390,10 +386,6 @@ body {
 .track-controls button.inactive {
   color: #ccc;
   transform: scale(1);
-}
-
-.track-controls button:hover {
-  color: #0056b3;
 }
 
 .volume-container {

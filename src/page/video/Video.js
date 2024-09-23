@@ -308,9 +308,9 @@ const Video = () => {
             }
           />
 
-          <div className="playlist">
+          {/* <div className="playlist">
             <canvas ref={canvasRef} className="visualizer"></canvas>
-          </div>
+          </div> */}
         </div>
 
         <ListMusic

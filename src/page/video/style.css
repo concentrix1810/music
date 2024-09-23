@@ -538,9 +538,20 @@ body {
   cursor: pointer;
 }
 
+.playlist .visualizer {
+  width: 350px;
+  height: 100px;
+  margin-top: -50px;
+}
+
 @media (max-width: 768px) {
   .responsive-player {
     padding-top: 75%; /* 4:3 Aspect Ratio for tablets */
+  }
+  .playlist .visualizer {
+    width: 300px;
+    height: 90px;
+    margin-top: -36px;
   }
 }
 
@@ -556,6 +567,11 @@ body {
   }
   .seek-bar {
     height: 50px;
+  }
+  .playlist .visualizer {
+    width: 300px;
+    height: 80px;
+    margin-top: -60px;
   }
 }
 

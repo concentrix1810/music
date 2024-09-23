@@ -97,7 +97,38 @@ import BacphanPiano from "./videos/BacphanPiano.mp3";
 import BacPhan from "./videos/BacPhan.mp3";
 import HongNhang from "./videos/HongNhang.mp3";
 import LaMotThangConTrai from "./videos/LaMotThangConTrai.mp3";
+import PhapTaBa from "./videos/PhapTaBa.mp3";
+import EpDuyen from "./videos/EpDuyen.mp3";
+import TruMua from "./videos/TruMua.mp3";
+import VaChiMong from "./videos/VaChiMong.mp3";
+import CanhHoaHeoTan from "./videos/CanhHoaHeoTan.mp3";
+import Mashup from "./videos/Mashup.mp3";
 export const audios = [
+  {
+    name: "Mashup Bánh Cuốn",
+    url: Mashup,
+  },
+  {
+    name: "Pháp Ta Bà",
+    url: PhapTaBa,
+  },
+
+  {
+    name: "Ép Duyên",
+    url: EpDuyen,
+  },
+  {
+    name: "Trú Mưa",
+    url: TruMua,
+  },
+  {
+    name: "Và Chỉ Mong...",
+    url: VaChiMong,
+  },
+  {
+    name: "Cánh Hoa Héo Tàn",
+    url: CanhHoaHeoTan,
+  },
   {
     name: "4 Bài Kết Hợp - (ATSH)",
     url: AnhTraiAlan,

@@ -8,7 +8,6 @@ const ListMusic = ({
   currentVideoIndex,
   handleAudioSelect,
   isPlaying,
-  isAudioPaused,
   playAudio,
   pauseAudio,
   playlistItemRefs,
@@ -47,13 +46,13 @@ const ListMusic = ({
       </h5>
       <ul className="row">
         {filteredAudios.map((audio, index) => {
-          const actualIndex = audios.findIndex((a) => a.name === audio.name); // Ensure correct index
+          const actualIndex = audios.findIndex((a) => a.name === audio.name);
           const isActive = actualIndex === currentVideoIndex;
 
           return (
             <li
               key={index}
-              ref={(el) => (audioRefs.current[index] = el)}
+              ref={(el) => (playlistItemRefs.current[actualIndex] = el)} // Correctly use refs
               className={`col-sm-6 col-lg-3 col-12 ${isActive ? "active" : ""}`}
               onClick={() => handleClick(actualIndex)}
             >
@@ -80,6 +79,7 @@ const ListMusic = ({
           );
         })}
       </ul>
+
       <span>Copyright by CONCENTRIX ❤</span>
     </div>
   );

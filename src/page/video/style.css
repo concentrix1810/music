@@ -175,6 +175,8 @@ body {
 }
 
 .audio-player {
+  opacity: 1;
+  transition: opacity 0.5s ease-in-out;
   position: sticky; /* Hoặc bạn có thể dùng fixed */
   top: 0;
   background-color: white; /* Để header không trong suốt */
@@ -322,6 +324,7 @@ body {
 .volume-slider {
   width: 200px; /* Adjust the width of the slider */
   margin-left: 10px;
+  cursor: pointer;
 }
 
 /* Style for the volume percentage display */
@@ -554,7 +557,13 @@ body {
     padding-top: 100%; /* 1:1 Aspect Ratio for mobile devices */
   }
   .playlist h5 {
-    font-size: 14px;
+    font-size: 18px;
+  }
+  .playlist h5:hover {
+    color: #0056b3;
+  }
+  .seek-bar {
+    height: 50px;
   }
 }
 

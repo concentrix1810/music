@@ -103,7 +103,17 @@ import TruMua from "./videos/TruMua.mp3";
 import VaChiMong from "./videos/VaChiMong.mp3";
 import CanhHoaHeoTan from "./videos/CanhHoaHeoTan.mp3";
 import Mashup from "./videos/Mashup.mp3";
+import TuyetTrenPhoBray from "./videos/TuyetTrenPhoBray.mp3";
+import TuyetYeuThuong from "./videos/TuyetYeuThuong.mp3";
 export const audios = [
+  {
+    name: "TUYẾT TRÊN PHỐ (lyrics)- GILL ( TEAM BRAY )",
+    url: TuyetTrenPhoBray,
+  },
+  {
+    name: "TUYẾT Yêu Thương",
+    url: TuyetYeuThuong,
+  },
   {
     name: "Mashup Bánh Cuốn",
     url: Mashup,

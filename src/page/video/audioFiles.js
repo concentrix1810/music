@@ -107,7 +107,7 @@ import TuyetTrenPhoBray from "./videos/TuyetTrenPhoBray.mp3";
 import TuyetYeuThuong from "./videos/TuyetYeuThuong.mp3";
 export const audios = [
   {
-    name: "TUYẾT TRÊN PHỐ (lyrics)- GILL ( TEAM BRAY )",
+    name: "TUYẾT TRÊN PHỐ - GILL",
     url: TuyetTrenPhoBray,
   },
   {

@@ -104,6 +104,15 @@ import VaChiMong from "./videos/VaChiMong.mp3";
 import CanhHoaHeoTan from "./videos/CanhHoaHeoTan.mp3";
 import Mashup from "./videos/Mashup.mp3";
 import TuyetTrenPhoBray from "./videos/TuyetTrenPhoBray.mp3";
+import NgoiNhaHP from "./videos/NgoiNhaHP.mp3";
+import ChungTaKTVN from "./videos/ChungTaKTVN.mp3";
+import KhuonMatDangT from "./videos/KhuonMatDangT.mp3";
+import MahBoo from "./videos/MahBoo.mp3";
+import DoiThay from "./videos/DoiThay.mp3";
+import LoiDiRieng from "./videos/LoiDiRieng.mp3";
+import DungNoiYeuToi from "./videos/DungNoiYeuToi.mp3";
+import AirplaneMode from "./videos/AirplaneMode.mp3";
+import LamNguoiYeuAN from "./videos/LamNguoiYeuAN.mp3";
 import TuyetYeuThuong from "./videos/TuyetYeuThuong.mp3";
 export const audios = [
   {
@@ -324,6 +333,46 @@ export const audios = [
   {
     name: "MỘT NGÀY BUỒN",
     url: MotNgayBuon,
+  },
+  {
+    name: "Làm Người Yêu Anh Nhé Baby - Ba Chú Bộ Đội - (NH)",
+    url: LamNguoiYeuAN,
+  },
+  {
+    name: "AIRPLANE MODE - (NH)",
+    url: AirplaneMode,
+  },
+  {
+    name: "Đừng Nói Yêu Tôi Remix - (NH)",
+    url: DungNoiYeuToi,
+  },
+  {
+    name: "Lối Đi Riêng - Pháp Kiều - (NH)",
+    url: LoiDiRieng,
+  },
+  {
+    name: "Đổi Thay - (NH)",
+    url: DoiThay,
+  },
+  {
+    name: "MAH BOO - (NH)",
+    url: MahBoo,
+  },
+  {
+    name: "Khuôn Mặt Đáng Thương - (NH)",
+    url: KhuonMatDangT,
+  },
+  {
+    name: "Chúng Ta Không Thuộc Về Nhau - (NH)",
+    url: ChungTaKTVN,
+  },
+  {
+    name: "Ngôi Nhà Hạnh Phúc - (NH)",
+    url: NgoiNhaHP,
+  },
+  {
+    name: "Lãng - (NH)",
+    url: Lang,
   },
   {
     name: "Qua cầu rước em - (NH)",

@@ -114,7 +114,14 @@ import DungNoiYeuToi from "./videos/DungNoiYeuToi.mp3";
 import AirplaneMode from "./videos/AirplaneMode.mp3";
 import LamNguoiYeuAN from "./videos/LamNguoiYeuAN.mp3";
 import TuyetYeuThuong from "./videos/TuyetYeuThuong.mp3";
+import NgatNgay from "./videos/NgatNgay.mp3";
+import NothingOne from "./videos/NothingOne.mp3";
+import NothingTwo from "./videos/NothingTwo.mp3";
 export const audios = [
+  {
+    name: "Ngất Ngây",
+    url: NgatNgay,
+  },
   {
     name: "TUYẾT TRÊN PHỐ - GILL",
     url: TuyetTrenPhoBray,
@@ -333,6 +340,14 @@ export const audios = [
   {
     name: "MỘT NGÀY BUỒN",
     url: MotNgayBuon,
+  },
+  {
+    name: "Nothing In Your Eyes - (NH)",
+    url: NothingOne,
+  },
+  {
+    name: "Nothing In Your Eyes 2 - (NH)",
+    url: NothingTwo,
   },
   {
     name: "Làm Người Yêu Anh Nhé Baby - Ba Chú Bộ Đội - (NH)",

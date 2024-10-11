@@ -117,6 +117,27 @@ import TuyetYeuThuong from "./videos/TuyetYeuThuong.mp3";
 import NgatNgay from "./videos/NgatNgay.mp3";
 import NothingOne from "./videos/NothingOne.mp3";
 import NothingTwo from "./videos/NothingTwo.mp3";
+import TamSuVoiNguoiLa from "./videos/TamSuVoiNguoiLa.mp3";
+import AnhSeTotMa from "./videos/AnhSeTotMa.mp3";
+import TraiTimEmCungBietDau from "./videos/TraiTimEmCungBietDau.mp3";
+import Lac from "./videos/Lac.mp3";
+import DungLoAnhDoiMa from "./videos/DungLoAnhDoiMa.mp3";
+import CoAnhODayRoi from "./videos/CoAnhODayRoi.mp3";
+import CanhPhiYenTrongMua from "./videos/CanhPhiYenTrongMua.mp3";
+import SuyNghiTrongAnh from "./videos/SuyNghiTrongAnh.mp3";
+import GapNhungKhongOLai from "./videos/GapNhungKhongOLai.mp3";
+import YeuMotNguoiVoTam from "./videos/YeuMotNguoiVoTam.mp3";
+import MuaThangTu from "./videos/MuaThangTu.mp3";
+import CaMotBauTroiThuongNho from "./videos/CaMotBauTroiThuongNho.mp3";
+import ThuanTheoYTroi from "./videos/ThuanTheoYTroi.mp3";
+import YeuAnhLaLoiCuaEm from "./videos/YeuAnhLaLoiCuaEm.mp3";
+import XaEmAnhSeHanhPhuc from "./videos/XaEmAnhSeHanhPhuc.mp3";
+import CuoiThoi from "./videos/CuoiThoi.mp3";
+import HanhPhucKhongChonEm from "./videos/HanhPhucKhongChonEm.mp3";
+import OkBinz from "./videos/OkBinz.mp3";
+import YeuMotNguoiKhongYeu from "./videos/YeuMotNguoiKhongYeu.mp3";
+import ChoEmGanAnhThemChutNua from "./videos/ChoEmGanAnhThemChutNua.mp3";
+
 export const audios = [
   {
     name: "Ngất Ngây",
@@ -342,6 +363,78 @@ export const audios = [
     url: MotNgayBuon,
   },
   {
+    name: "Tâm Sự Với Người Lạ - (NH)",
+    url: TamSuVoiNguoiLa,
+  },
+  {
+    name: "Trái Tim Em Cũng Biết Đau - (NH)",
+    url: TraiTimEmCungBietDau,
+  },
+  {
+    name: "Đừng Lo Anh Đợi Mà - (NH)",
+    url: DungLoAnhDoiMa,
+  },
+  {
+    name: "Có anh ở đây rồi - (NH)",
+    url: CoAnhODayRoi,
+  },
+  {
+    name: "Cành Phi Yến Trong Mưa - (NH)",
+    url: CanhPhiYenTrongMua,
+  },
+  {
+    name: "Suy Nghĩ Trong Anh - (NH)",
+    url: SuyNghiTrongAnh,
+  },
+  {
+    name: "Gặp Nhưng Không Ở Lại - (NH)",
+    url: GapNhungKhongOLai,
+  },
+  {
+    name: "Yêu Một Người Vô Tâm - (NH)",
+    url: YeuMotNguoiVoTam,
+  },
+  {
+    name: "MƯA THÁNG TƯ - (NH)",
+    url: MuaThangTu,
+  },
+  {
+    name: "Cả Một Trời Thương Nhớ - (NH)",
+    url: CaMotBauTroiThuongNho,
+  },
+  {
+    name: "Thuận Theo Ý Trời - (NH)",
+    url: ThuanTheoYTroi,
+  },
+  {
+    name: "Yêu Anh Là Lỗi Của Em Song Thư - (NH)",
+    url: YeuAnhLaLoiCuaEm,
+  },
+  {
+    name: "Xa Em Anh Sẽ Hạnh Phúc - (NH)",
+    url: XaEmAnhSeHanhPhuc,
+  },
+  {
+    name: "Cưới Thôi - Masew - (NH)",
+    url: CuoiThoi,
+  },
+  {
+    name: "Hạnh Phúc Không Chọn Em - (NH)",
+    url: HanhPhucKhongChonEm,
+  },
+  {
+    name: "BINZ - OK - (NH)",
+    url: OkBinz,
+  },
+  {
+    name: "Yêu Một Người Không Yêu - (NH)",
+    url: YeuMotNguoiKhongYeu,
+  },
+  {
+    name: "Cho Em Gần Anh Thêm Chút Nữa - (NH)",
+    url: ChoEmGanAnhThemChutNua,
+  },
+  {
     name: "Nothing In Your Eyes - (NH)",
     url: NothingOne,
   },
@@ -365,6 +458,12 @@ export const audios = [
     name: "Lối Đi Riêng - Pháp Kiều - (NH)",
     url: LoiDiRieng,
   },
+
+  {
+    name: "Anh Sẽ Tốt Mà - (NH)",
+    url: AnhSeTotMa,
+  },
+
   {
     name: "Đổi Thay - (NH)",
     url: DoiThay,
@@ -386,8 +485,8 @@ export const audios = [
     url: NgoiNhaHP,
   },
   {
-    name: "Lãng - (NH)",
-    url: Lang,
+    name: "LẠC - (NH)",
+    url: Lac,
   },
   {
     name: "Qua cầu rước em - (NH)",

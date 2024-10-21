@@ -44,7 +44,7 @@ const ListMusic = ({
       <h5>
         List Music - <span>Have a nice day. Enjoy the music. 😉</span>
       </h5>
-      <p>
+      {/* <p>
         Nhân ngày 20/10, thay mặt các chàng trai GF Team, mình xin chúc toàn thể
         các chị em phụ nữ sức khỏe, sắc đẹp và công việc thì có thần tài dẫn lối
         83 86 nhó! Chúc một ngày vạn sự như ý, tỷ sự như mơ, triệu triệu bất ngờ
@@ -52,7 +52,7 @@ const ListMusic = ({
         đỉnh! 🎉💐🚀 Và để thêm phần vui vẻ, hôm nay các chàng trai chúng tôi sẽ
         khao mọi người một món quà nhỏ. Mọi người cứ thoải mái đặt nước đi ạ!
         🍹🥤
-      </p>
+      </p> */}
       <ul className="row">
         {filteredAudios.map((audio, index) => {
           const actualIndex = audios.findIndex((a) => a.name === audio.name);

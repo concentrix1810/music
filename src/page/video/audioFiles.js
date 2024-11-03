@@ -137,6 +137,7 @@ import HanhPhucKhongChonEm from "./videos/HanhPhucKhongChonEm.mp3";
 import OkBinz from "./videos/OkBinz.mp3";
 import YeuMotNguoiKhongYeu from "./videos/YeuMotNguoiKhongYeu.mp3";
 import ChoEmGanAnhThemChutNua from "./videos/ChoEmGanAnhThemChutNua.mp3";
+import Ikiga from "./videos/ikiga.mp3";
 
 export const audios = [
   {
@@ -361,6 +362,10 @@ export const audios = [
   {
     name: "MỘT NGÀY BUỒN",
     url: MotNgayBuon,
+  },
+  {
+    name: "IKIGAI ft. Bích Phương, 2pillz - (NH)",
+    url: Ikiga,
   },
   {
     name: "Tâm Sự Với Người Lạ - (NH)",

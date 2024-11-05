@@ -138,8 +138,28 @@ import OkBinz from "./videos/OkBinz.mp3";
 import YeuMotNguoiKhongYeu from "./videos/YeuMotNguoiKhongYeu.mp3";
 import ChoEmGanAnhThemChutNua from "./videos/ChoEmGanAnhThemChutNua.mp3";
 import Ikiga from "./videos/ikiga.mp3";
+import Winner from "./videos/Winner.mp3";
+import XeDoi350 from "./videos/350XeDoi.mp3";
+import DauPhaiVoAnh from "./videos/DauPhaiVoAnh.mp3";
+import HenBeLanSau from "./videos/HenBeLanSau.mp3";
 
 export const audios = [
+  {
+    name: "WINNER (Feat. BILLY100, MANBO)",
+    url: Winner,
+  },
+  {
+    name: "WRONG TIMES",
+    url: XeDoi350,
+  },
+  {
+    name: "ĐÂU PHẢI VỢ ANH",
+    url: DauPhaiVoAnh,
+  },
+  {
+    name: "HẸN BÉ LẦN SAU",
+    url: HenBeLanSau,
+  },
   {
     name: "Ngất Ngây",
     url: NgatNgay,

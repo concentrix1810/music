@@ -142,11 +142,26 @@ import Winner from "./videos/Winner.mp3";
 import XeDoi350 from "./videos/350XeDoi.mp3";
 import DauPhaiVoAnh from "./videos/DauPhaiVoAnh.mp3";
 import HenBeLanSau from "./videos/HenBeLanSau.mp3";
+import Trinh from "./videos/Trinh.mp3";
+import TraiHoVu from "./videos/TraiHoVu.mp3";
+import QuaTungKhungHinh from "./videos/QuaTungKhungHinh.mp3";
 
 export const audios = [
   {
+    name: "Trình - HTH",
+    url: Trinh,
+  },
+  {
+    name: "Qua Từng Khung Hình",
+    url: QuaTungKhungHinh,
+  },
+  {
     name: "WINNER (Feat. BILLY100, MANBO)",
     url: Winner,
+  },
+  {
+    name: "Trai Họ Vũ",
+    url: TraiHoVu,
   },
   {
     name: "WRONG TIMES",

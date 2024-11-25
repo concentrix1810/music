@@ -145,8 +145,18 @@ import HenBeLanSau from "./videos/HenBeLanSau.mp3";
 import Trinh from "./videos/Trinh.mp3";
 import TraiHoVu from "./videos/TraiHoVu.mp3";
 import QuaTungKhungHinh from "./videos/QuaTungKhungHinh.mp3";
+import KhongSaoCa from "./videos/KhongSaoCa.mp3";
+import GanVangDaSat from "./videos/GanVangDaSat.mp3";
 
 export const audios = [
+  {
+    name: "Không Sao Cả",
+    url: KhongSaoCa,
+  },
+  {
+    name: "Gan Vàng Dạ Sắt",
+    url: GanVangDaSat,
+  },
   {
     name: "Trình - HTH",
     url: Trinh,

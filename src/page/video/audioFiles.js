@@ -147,8 +147,33 @@ import TraiHoVu from "./videos/TraiHoVu.mp3";
 import QuaTungKhungHinh from "./videos/QuaTungKhungHinh.mp3";
 import KhongSaoCa from "./videos/KhongSaoCa.mp3";
 import GanVangDaSat from "./videos/GanVangDaSat.mp3";
+import ADLDJD from "./videos/ADLDJD.mp3";
+import DJHOSE from "./videos/DJHOSE.mp3";
+import BMPL from "./videos/BMPL.mp3";
+import LEGENDMANBO from "./videos/LEGENDMANBO.mp3";
+import HustlangRobber from "./videos/HustlangRobber.mp3";
 
 export const audios = [
+  {
+    name: "Anh Đã Làm Được Gì Đâu",
+    url: ADLDJD,
+  },
+  {
+    name: "DJ HOSE - Coolkid",
+    url: DJHOSE,
+  },
+  {
+    name: "Bốn Mùa Phát Lộc - Gill",
+    url: BMPL,
+  },
+  {
+    name: "LEGEND - MANBO",
+    url: LEGENDMANBO,
+  },
+  {
+    name: "Hustlang - Robber",
+    url: HustlangRobber,
+  },
   {
     name: "Không Sao Cả",
     url: KhongSaoCa,

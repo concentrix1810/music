@@ -12,7 +12,6 @@ body {
   right: 0;
   z-index: 100;
   background: white;
-  margin-bottom: 36px;
 }
 .search-wrapper {
   display: flex;
@@ -579,4 +578,38 @@ body {
   .responsive-player {
     display: none; /* Hide video on desktop */
   }
+}
+
+.countdown-container {
+  text-align: center;
+  margin: 20px 0;
+  font-family: Arial, sans-serif;
+}
+
+.countdown {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin: 10px;
+}
+
+.countdown-item {
+  background-color: #f4f4f4;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 6px 6px;
+  text-align: center;
+  width: 80px;
+}
+
+.countdown-item p {
+  font-size: 24px;
+  margin: 0;
+  color: #333;
+  font-weight: bold;
+}
+
+.countdown-item span {
+  font-size: 14px;
+  color: #666;
 }

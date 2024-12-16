@@ -152,8 +152,75 @@ import DJHOSE from "./videos/DJHOSE.mp3";
 import BMPL from "./videos/BMPL.mp3";
 import LEGENDMANBO from "./videos/LEGENDMANBO.mp3";
 import HustlangRobber from "./videos/HustlangRobber.mp3";
+import AnhTraiHipHop from "./videos/AnhTraiHipHop.mp3";
+import CuCon from "./videos/CuCon.mp3";
+import TrangVeThonDa from "./videos/TrangVeThonDa.mp3";
+import EmOi from "./videos/EmOi.mp3";
+import MotDoi from "./videos/MotDoi.mp3";
+import NeuCoHaiTraiTim from "./videos/NeuCoHaiTraiTim.mp3";
+import DonGianAnhYeuEm from "./videos/DonGianAnhYeuEm.mp3";
+import TruongDinhHoang from "./videos/TruongDinhHoang.mp3";
+import MoiLoiChoEm from "./videos/MoiLoiChoEm.mp3";
+import MoiEmVeVungCao from "./videos/MoiEmVeVungCao.mp3";
+import YeuAnhEmNhe from "./videos/YeuAnhEmNhe.mp3";
+import NguoiAmPhu from "./videos/NguoiAmPhu.mp3";
+import SimpleLove from "./videos/SimpleLove.mp3";
+import EmDaXaAnh from "./videos/EmDaXaAnh.mp3";
+import EmNhuNaoCungDuoc from "./videos/EmNhuNaoCungDuoc.mp3";
 
 export const audios = [
+  {
+    name: "Một Đời",
+    url: MotDoi,
+  },
+  {
+    name: "Nếu Có Hai Trai Tim",
+    url: NeuCoHaiTraiTim,
+  },
+  {
+    name: "Đơn Giản Anh Yêu Em",
+    url: DonGianAnhYeuEm,
+  },
+  {
+    name: "Trương Đình Hoàng",
+    url: TruongDinhHoang,
+  },
+  {
+    name: "Mở Lối Cho Em",
+    url: MoiLoiChoEm,
+  },
+  {
+    name: "Mời Em Về Vùng Cao",
+    url: MoiEmVeVungCao,
+  },
+  {
+    name: "Yêu Anh Em Nhé",
+    url: YeuAnhEmNhe,
+  },
+  {
+    name: "Người Âm Phủ",
+    url: NguoiAmPhu,
+  },
+  {
+    name: "Simple Love",
+    url: SimpleLove,
+  },
+  {
+    name: "Em Đã Xa Anh",
+    url: EmDaXaAnh,
+  },
+  {
+    name: "Em Như Nào Cũng Được",
+    url: EmNhuNaoCungDuoc,
+  },
+  {
+    name: "Anh Trai Hip Hop",
+    url: AnhTraiHipHop,
+  },
+  {
+    name: "Bé Con - Rap Việt",
+    url: CuCon,
+  },
   {
     name: "Anh Đã Làm Được Gì Đâu",
     url: ADLDJD,
@@ -432,6 +499,14 @@ export const audios = [
   {
     name: "MỘT NGÀY BUỒN",
     url: MotNgayBuon,
+  },
+  {
+    name: "TRĂNG VỀ THÔN DÃ - (NH)",
+    url: TrangVeThonDa,
+  },
+  {
+    name: "[Lyrics][Audio] Em Ơi - (NH)",
+    url: EmOi,
   },
   {
     name: "IKIGAI ft. Bích Phương, 2pillz - (NH)",

@@ -167,8 +167,14 @@ import NguoiAmPhu from "./videos/NguoiAmPhu.mp3";
 import SimpleLove from "./videos/SimpleLove.mp3";
 import EmDaXaAnh from "./videos/EmDaXaAnh.mp3";
 import EmNhuNaoCungDuoc from "./videos/EmNhuNaoCungDuoc.mp3";
+import TaiSinh from "./videos/TaiSinh.mp3";
+import HoaGiaiBangNuocMat from "./videos/HoaGiaiBangNuocMat.mp3";
 
 export const audios = [
+  {
+    name: "Tái Sinh",
+    url: TaiSinh,
+  },
   {
     name: "Một Đời",
     url: MotDoi,
@@ -375,7 +381,7 @@ export const audios = [
     url: ThienLyOi,
   },
   {
-    name: "Em gì ơi (J) - (NH)",
+    name: "Em gì ơi (J)",
     url: EmGiOi,
   },
   {
@@ -499,6 +505,10 @@ export const audios = [
   {
     name: "MỘT NGÀY BUỒN",
     url: MotNgayBuon,
+  },
+  {
+    name: "HÓA GIẢI BẰNG NƯỚC MẮT - (NH)",
+    url: HoaGiaiBangNuocMat,
   },
   {
     name: "TRĂNG VỀ THÔN DÃ - (NH)",
